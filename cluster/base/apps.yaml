@@ -13,9 +13,9 @@ spec:
     name: flux-system
   path: ./cluster/apps
   prune: true
-  postBuild:
-    substituteFrom:
-      - kind: Secret
-        name: cluster-secret-vars
-      - kind: Secret
-        name: cluster-user-auth
+  # postBuild:
+  #   substituteFrom:
+  #     - kind: Secret
+  #       name: cluster-secret-vars
+  #     - kind: Secret
+  #       name: cluster-user-auth

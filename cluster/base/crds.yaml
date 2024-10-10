@@ -13,7 +13,7 @@ spec:
     name: flux-system
   path: ./cluster/crds
   prune: true
-  postBuild:
-    substituteFrom:
-      - kind: Secret
-        name: cluster-secret-vars
+  # postBuild:
+  #   substituteFrom:
+  #     - kind: Secret
+  #       name: cluster-secret-vars
